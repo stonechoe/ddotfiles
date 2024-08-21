@@ -21,11 +21,11 @@ command -v chezmoi >/dev/null 2>&1 || \
 
 if [ -d "$HOME/.local/share/chezmoi/.git" ]; then
   echo "🚸  chezmoi already initialized"
-  echo "    Reinitialize with: 'chezmoi init https://github.com/hyp3rflow/ddotfiles.git'"
+  echo "    Reinitialize with: 'chezmoi init https://github.com/stonechoe/ddotfiles.git'"
 else
   echo "🚀  Initialize dotfiles with:"
-  echo "    chezmoi init https://github.com/hyp3rflow/ddotfiles.git"
-  chezmoi init https://github.com/hyp3rflow/ddotfiles.git
+  echo "    chezmoi init https://github.com/stonechoe/ddotfiles.git"
+  chezmoi init https://github.com/stonechoe/ddotfiles.git
 fi
 
 echo ""

@@ -36,6 +36,7 @@ echo "Done."
 
 
 # install zsh(omz) plugins
+zsh <<< '
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
@@ -48,3 +49,4 @@ omz plugin enable zsh-autosuggestions
 omz plugin enable zsh-syntax-highlighting
 omz plugin enable fast-syntax-highlighting
 omz plugin enable asdf
+'

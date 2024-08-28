@@ -31,6 +31,8 @@ brew install asdf
 . $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
 echo '. $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh' >> ".zshrc"
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
+asdf install java openjdk-17:latest
+asdf global java openjdk-17:latest
 asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
 
 echo '👊  Installing coursier' && brew install coursier && cs setup

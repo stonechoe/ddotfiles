@@ -19,8 +19,8 @@ chmod -R go-w "$(brew --prefix)/share/zsh"
 echo '💰  Installing oh-my-zsh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "eval '$($HOME/homebrew/bin/brew shellenv)'" >> ".profile"
-echo "eval '$($HOME/homebrew/bin/brew shellenv)'" >> ".zprofile"
+echo 'eval "$($HOME/homebrew/bin/brew shellenv)"' >> ".profile"
+echo 'eval "$($HOME/homebrew/bin/brew shellenv)"' >> ".zprofile"
 
 echo '👊  Installing chezmoi'
 brew install chezmoi

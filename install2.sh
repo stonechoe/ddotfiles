@@ -28,6 +28,8 @@ chezmoi init https://github.com/stonechoe/ddotfiles.git
 
 echo '👊  Installing asdf'
 brew install asdf
+. $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
+echo '. $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh' >> ".zshrc"
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
 asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
 

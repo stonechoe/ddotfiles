@@ -1,15 +1,5 @@
 # For Linux
 
-# git config
-echo "[user]
-	email = choems@outlook.com
-	name = Minseok Choe
-[push]
-	autoSetupRemote = true
-[url \"ssh://git@github.com/\"]
-	insteadOf = https://github.com/" > ~/.gitconfig
-	
-
 echo '🍺  Installing Homebrew'
 git clone https://github.com/Homebrew/brew homebrew
 eval "$(homebrew/bin/brew shellenv)"
